@@ -11,3 +11,34 @@ $yellow: #FFCF66;
 $green: #89B692;
 $blue: #79ACD1;
 $black: #4E4F4F;
+
+html {
+    font-size: 62.5%;
+}
+
+#app {
+  color: $black;
+  background-color: $white;
+
+  font-family: 'Sorts Mill Goudy', serif;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  
+}
+
+p, a {
+    font-size: clamp(1.6rem, 1.8vw, 2rem);
+}
+
+
+
+.logo {
+    max-width: 200px;
+    // width: clamp(150px, 4vw, 200px);
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 85%;
+    margin: 0 auto;
+}
