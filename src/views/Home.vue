@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img class="logo" alt="thank u, mama earth logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    
+    <HelloWorld msg="giving back to mama earth by buying less but better" />
   </div>
 </template>
 
