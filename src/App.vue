@@ -10,7 +10,7 @@
         <router-link to="/about">about</router-link>
         </div>
 
-        <router-view class="wrapper" />
+        <router-view />
 
         <footer>
             <section class="main-footer wrapper">

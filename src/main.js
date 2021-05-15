@@ -5,19 +5,18 @@ import store from "./store";
 
 // importing font awesome icons
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faRainbow } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 import { faEtsy } from "@fortawesome/free-brands-svg-icons";
 
+library.add(faRainbow);
 library.add(faInstagram);
 library.add(faFacebookF);
 library.add(faPinterest);
 library.add(faEtsy);
-
-
-// library.add(faCoffee)
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
