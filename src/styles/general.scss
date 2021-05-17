@@ -74,6 +74,9 @@ h4 {
     font-size: clamp(2rem, 2.1vw, 2.2rem);
 }
 
+section {
+    padding: 60px 0;
+}
 
 .logo {
     max-width: 200px;
@@ -84,10 +87,6 @@ h4 {
     max-width: 1200px;
     width: 85%;
     margin: 0 auto;
-}
-
-.container {
-    padding: 60px 0;
 }
 
 // logo stuffs

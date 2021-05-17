@@ -5,7 +5,7 @@
 
         <div class="homepage-main wrapper">
             
-            <section class="homepage-intro container">
+            <section class="homepage-intro">
                 <p>A collective of <em class="highlight highlight-r">sustainable retailers</em> focused on giving back to the planet.
                     <span class="emphasis">thank u,</span>
                     mama
@@ -17,8 +17,8 @@
                 </p>
             </section>
 
-            <section class="homepage-company container">
-                <div class="homepage-company-header">
+            <section class="homepage-company">
+                <div class="header">
                     <font-awesome-icon class="red" :icon="['fas', 'rainbow']" />
                     <h2>Meet Some of Our Faves</h2>
                 </div>
@@ -65,8 +65,8 @@
                 </ul>
             </section>
 
-            <section class="homepage-help container">
-                <div class="homepage-help-header">
+            <section class="homepage-help">
+                <div class="header">
                     <font-awesome-icon class="green" :icon="['fas', 'recycle']" />
                     <h2>Other Ways to Help</h2>
                 </div>
@@ -91,7 +91,7 @@
                 </div>
             </section>
 
-            <section class="join-club container">
+            <section class="join-club">
                 <div class="join-club-text">
                     <h2>Wanna Join the Club?</h2>
                     <p>Submit your business to be featured on 
@@ -109,8 +109,8 @@
                 </div>
             </section>
 
-            <section class="homepage-share container">
-                <div class="homepage-share-header">
+            <section class="homepage-share">
+                <div class="header">
                     <font-awesome-icon class="blue" :icon="['fas', 'seedling']" />
                     <h2>Spread The Word</h2>
                 </div>
@@ -126,7 +126,7 @@
                             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, dolores?</li>
                         </ul>
 
-                        <button class="square-btn" download>download + share</button>
+                        <button class="square-btn click-r" download>download + share</button>
                     </div>
 
                     <div class="share-wallpapers">
@@ -171,9 +171,7 @@
         margin: 0 auto;
     }
 
-    .homepage-company-header,
-    .homepage-help-header,
-    .homepage-share-header {
+    .header {
         text-align: center;
         padding-bottom: 20px;
     }
@@ -185,7 +183,7 @@
     }
 
     .company-post {
-        margin: 20px 15px;
+        margin: 20px 15px 0;
     }
 
     .company-post-text {
@@ -233,6 +231,53 @@
         .square-btn {
             min-width: 230px;
         }
+    }
+
+    .homepage-share h3 {
+        padding-bottom: 30px;
+    }
+
+    .share-flex,
+    .wallpaper-flex {
+        display: flex;
+    }
+
+    .share-flex { 
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .share-wallpapers,
+    .share-stories {
+        width: 50%;
+    }
+
+    .share-wallpapers,
+    .wallpaper-flex img:nth-of-type(2) {
+        margin-left: 20px;
+    }
+
+    .share-stories,
+    .wallpaper-flex img:nth-of-type(1) {
+        margin-right: 20px;
+    }
+
+    .share-stories li {
+        list-style: circle;
+        padding: 10px;
+
+        &:nth-of-type(1) {
+            padding-top: 0;
+        }
+    }
+
+    .wallpaper-flex {
+        justify-content: space-between;
+    }
+
+    .homepage-share .square-btn {
+        min-width: 240px;
+        margin: 30px 0;
     }
 
 </style>

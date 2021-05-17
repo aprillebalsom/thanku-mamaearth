@@ -19,22 +19,22 @@
                 <div class="footer-nav">
                     <ul> 
                         <li>
-                            <router-link to="/">home</router-link>  
+                            <router-link class="click-r" to="/shop">shop</router-link> 
                         </li>
                         <li>
-                            <router-link to="/shop">shop</router-link> 
+                            <router-link class="click-y" to="/info">why sustainability?</router-link> 
                         </li>
-                        <li>
-                            <router-link to="/info">why sustainability?</router-link> 
+                         <li>
+                            <router-link class="click-o" to="/fun">fun stuff</router-link>
                         </li>
                     </ul>
 
                     <ul>
                         <li>
-                            <router-link to="/fun">fun stuff</router-link>
+                            <router-link class="click-g" to="/about">about</router-link>
                         </li>
                         <li>
-                            <router-link to="/about">about</router-link>
+                            <router-link class="click-b" to="/contact">join the club</router-link>  
                         </li>
                     </ul>
                 </div>
@@ -43,17 +43,17 @@
                     <h4>Stay In Touch</h4>
                     <ul>
                         <li><a target="_blank" rel="noopener" href="https://www.instagram.com/thankumamaearth/">
-                            <font-awesome-icon :icon="['fab', 'instagram']" />
+                            <font-awesome-icon class="click-y" :icon="['fab', 'instagram']" />
                         </a></li>
 
                         <li><a target="_blank" rel="noopener" href="https://www.facebook.com/thankumamaearth">
-                            <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                            <font-awesome-icon class="click-b" :icon="['fab', 'facebook-f']" />
                         </a></li>
                         <li><a target="_blank" rel="noopener" href="https://www.pinterest.ca/thankumamaearth/_created/">
-                            <font-awesome-icon :icon="['fab', 'pinterest']" />
+                            <font-awesome-icon class="click-r" :icon="['fab', 'pinterest']" />
                         </a></li>
                         <li><a target="_blank" rel="noopener" href="https://www.etsy.com/ca/shop/sundayhomework">
-                            <font-awesome-icon :icon="['fab', 'etsy']" />
+                            <font-awesome-icon class="click-o" :icon="['fab', 'etsy']" />
                         </a></li>
                     </ul>
                 </div>
@@ -90,7 +90,7 @@
     #nav {
         text-align: center;
 
-        padding: 30px;
+        padding-top: 25px;
     
         display: flex;
         justify-content: center;
@@ -109,7 +109,7 @@
         font-size: 1.4rem;
         line-height: 2.2rem;
 
-        padding: 20px 0;
+        padding: 50px 0;
         margin-top: 40px;
 
         display: flex;

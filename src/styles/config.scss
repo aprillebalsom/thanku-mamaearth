@@ -26,4 +26,10 @@ ul, ol {
 button { 
     border: none;
     background: none;
+    color: inherit;
+
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    cursor: pointer;
 }

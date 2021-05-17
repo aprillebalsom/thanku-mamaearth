@@ -37,8 +37,11 @@
     };
 </script>
 
-
 <style scoped lang="scss">
+
+    @import '@/styles/config.scss';
+    @import '@/styles/general.scss';
+
     .home-header {
         text-align: right;
         
@@ -48,7 +51,7 @@
         background-repeat: no-repeat;
 
         padding-bottom: 150px;
-        height: 69vh;
+        height: 68.5vh;
 
         display: flex;
         justify-content: flex-start;
@@ -59,15 +62,19 @@
         margin-top: 20px;
     }
 
-    .categories ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .categories {
+        padding: 20px 0;
+    
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
 
-
-        li {
-            margin: 20px 10px;
-            border-radius: 50%;
+            li img {
+                // margin: 0 10px;
+                border-radius: 50%;
+                border: .5px solid $black;
+            }
         }
     }
 </style>
