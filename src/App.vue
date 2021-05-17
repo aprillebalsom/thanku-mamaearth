@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-
+        <AlertBar />
+        
         <div id="nav" class="wrapper">
         <router-link class="click-r" to="/shop">shop</router-link> 
         <router-link class="click-o" to="/info">why sustainable?</router-link> 
@@ -69,64 +70,76 @@
     </div>
 </template>
 
+<script>
+    import AlertBar from "@/components/AlertBar.vue";
+
+    export default {
+        name: "Alert",
+        components: {
+            AlertBar,
+        },
+    };
+</script>
+
 
 <style lang="scss">
-@import '@/styles/config.scss';
-@import '@/styles/general.scss';
+    @import '@/styles/config.scss';
+    @import '@/styles/general.scss';
 
 
-#nav {
-    text-align: center;
+    #nav {
+        text-align: center;
 
-    padding: 30px;
-  
-    display: flex;
-    justify-content: center;
-
-    a {
-        margin: 0 15px;
+        padding: 30px;
     
-        &.router-link-exact-active {
-            color: $green;
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin: 0 15px;
+        
+            &.router-link-exact-active {
+                color: $green;
+            }
         }
     }
-}
 
-.main-footer {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-
-    padding: 20px 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.footer-nav,
-.footer-socials ul {
-    display: flex;
-}
-
-.footer-nav ul{
-    margin-right: 25px;
-}
-
-.footer-socials li{
-    margin: 10px 15px 10px 0;
-}
-
-
-.sub-footer {
-    background-color: $green;
-
-    text-align: center;
-
-    padding: 10px 0;
-
-    p,
-    a {
+    .main-footer {
+        border-top: .5px solid $black;
         font-size: 1.4rem;
+        line-height: 2.2rem;
+
+        padding: 20px 0;
+        margin-top: 40px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
-}
+
+    .footer-nav,
+    .footer-socials ul {
+        display: flex;
+    }
+
+    .footer-nav ul{
+        margin-right: 25px;
+    }
+
+    .footer-socials li{
+        margin: 10px 15px 10px 0;
+    }
+
+    .sub-footer {
+        background-color: $green;
+
+        text-align: center;
+
+        padding: 10px 0;
+
+        p,
+        a {
+            font-size: 1.4rem;
+        }
+    }
 </style>

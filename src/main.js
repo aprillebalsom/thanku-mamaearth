@@ -8,6 +8,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faRainbow } from '@fortawesome/free-solid-svg-icons';
 import { faRecycle } from '@fortawesome/free-solid-svg-icons';
+import { faSeedling} from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
@@ -15,6 +16,7 @@ import { faEtsy } from "@fortawesome/free-brands-svg-icons";
 
 library.add(faRainbow);
 library.add(faRecycle);
+library.add(faSeedling);
 library.add(faInstagram);
 library.add(faFacebookF);
 library.add(faPinterest);
