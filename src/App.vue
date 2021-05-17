@@ -2,12 +2,13 @@
     <div id="app">
 
         <div id="nav" class="wrapper">
-        <router-link to="/shop">shop</router-link> 
-        <router-link to="/info">why sustainable?</router-link> 
+        <router-link class="click-r" to="/shop">shop</router-link> 
+        <router-link class="click-o" to="/info">why sustainable?</router-link> 
         <!-- TODO update logo so colors are in proper order -->
         <router-link to="/"><img class="logo" src="./assets/logo.png" alt="thank u, mama earth logo"></router-link>  
-        <router-link to="/fun">fun stuff</router-link>
-        <router-link to="/about">about</router-link>
+        <router-link class="click-y" to="/fun">fun stuff</router-link>
+        <router-link class="click-g" to="/about">about</router-link>
+        <router-link class="click-b" to="/contact">join the club</router-link>
         </div>
 
         <router-view />

@@ -5,7 +5,7 @@
             
             <div class="home-header-text wrapper">
                 <h1>{{ msg }}</h1>
-                <router-link class="square-btn" to="/shop">shop</router-link>
+                <router-link class="square-btn click-r" to="/shop">shop</router-link>
             </div>
 
         </section>

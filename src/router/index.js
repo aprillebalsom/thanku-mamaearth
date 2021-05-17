@@ -5,29 +5,29 @@ import Home from "../views/Home.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  {
+    {
     path: "/",
     name: "Home",
     component: Home,
-  },
-  {
+    },
+    {
     path: "/about",
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-  {
+        import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    },
+    {
     path: "/fun",
     name: "Fun",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Fun.vue"),
-  },
+        import(/* webpackChunkName: "about" */ "../views/Fun.vue"),
+    },
     {
     path: "/shop",
     name: "Shop",
@@ -35,17 +35,26 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Shop.vue"),
-  },
-  {
+        import(/* webpackChunkName: "about" */ "../views/Shop.vue"),
+    },
+    {
     path: "/info",
     name: "Info",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Info.vue"),
-  },
+        import(/* webpackChunkName: "about" */ "../views/Info.vue"),
+    },
+    {
+        path: "/contact",
+        name: "Contact",
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
+    },
 ];
 
 const router = new VueRouter({

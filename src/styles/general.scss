@@ -43,6 +43,11 @@ body {
     font-size: clamp(1.6rem, 1.7vw, 1.8rem);
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 #app {
   color: $black;
   background-color: $white;
@@ -147,5 +152,54 @@ h4 {
 
     display: inline-block;
     
-    transition: .3s all;
+    transition: .5s all;
+}
+
+// hover, focus +  active states
+.click-r {
+    &:hover,
+    &:focus,
+    &:active {
+        color: $red;
+    }
+}
+
+.click-o {
+    &:hover,
+    &:focus,
+    &:active {
+        color: $orange;
+    }
+}
+
+.click-y {
+    &:hover,
+    &:focus,
+    &:active {
+        color: $yellow;
+    }
+}
+
+.click-g {
+    &:hover,
+    &:focus,
+    &:active {
+        color: $green;
+    }
+}
+
+.click-b {
+    &:hover,
+    &:focus,
+    &:active {
+        color: $blue;
+    }
+}
+
+.spread {
+    &:hover,
+    &:focus,
+    &:active {
+        letter-spacing: 5px;
+    }
 }
