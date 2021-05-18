@@ -13,7 +13,7 @@
                     <span class="orange">a</span>
                     <span class="yellow">r</span>
                     <span class="green">t</span>
-                    <span class="blue">h</span> was created to inspire environmental change through eco-conscious shopping & buying less, but <span class="emphasis">but better</span>. Big or small, <em class="highlight highlight-y">every little bit counts</em> so thank u for doing your part. xx
+                    <span class="blue">h</span> was created to inspire environmental change through eco-conscious shopping & buying less, <span class="emphasis">but better</span>. Big or small, <em class="highlight highlight-y">every little bit counts</em> so thank u for doing your part. xx
                 </p>
             </section>
 
@@ -133,8 +133,8 @@
                         <h3 class="emphasis">Digital Downloads: Phone Wallpapers</h3>
 
                         <div class="wallpaper-flex">
-                            <img src="https://via.placeholder.com/200x320/" alt="">
-                            <img src="https://via.placeholder.com/200x320/" alt="">
+                            <img src="~@/assets/lil-bits-mama-earth-mockup.png" alt="">
+                            <img src="~@/assets/everyday-like-earth-day-mockup.png" alt="">
                         </div>
 
                         <router-link class="click-y square-btn" to="/fun">download + see more</router-link>
@@ -165,15 +165,18 @@
     @import '@/styles/general.scss';
 
     .homepage-intro {
+        background-image: url('~@/assets/topography.svg');
+
         font-size: clamp(2rem, 2.2vw, 2.4rem);
 
-        width: 80%;
-        margin: 0 auto;
+        padding: 30px;
+        width: 90%;
+        margin: 40px auto 0;
     }
 
     .header {
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
 
     .homepage-company-posts {
@@ -183,7 +186,7 @@
     }
 
     .company-post {
-        margin: 20px 15px 0;
+        margin: 0 15px;
     }
 
     .company-post-text {
@@ -252,14 +255,12 @@
         width: 50%;
     }
 
-    .share-wallpapers,
-    .wallpaper-flex img:nth-of-type(2) {
-        margin-left: 20px;
+    .share-wallpapers {
+        padding-left: 30px;
     }
 
-    .share-stories,
-    .wallpaper-flex img:nth-of-type(1) {
-        margin-right: 20px;
+    .share-stories {
+        padding-right: 30px;
     }
 
     .share-stories li {
@@ -271,8 +272,20 @@
         }
     }
 
+    .share-wallpapers {
+        border-left: .5px solid $black;
+    }
+
     .wallpaper-flex {
         justify-content: space-between;
+    }
+
+    .wallpaper-flex img:nth-of-type(1) {
+        margin-right: 10px;
+    }
+
+    .wallpaper-flex img:nth-of-type(2) {
+        margin-left: 10px;
     }
 
     .homepage-share .square-btn {

@@ -70,8 +70,12 @@
             justify-content: space-evenly;
             align-items: center;
 
+            li {
+                margin: 0 10px;
+            }
+
+
             li img {
-                // margin: 0 10px;
                 border-radius: 50%;
                 border: .5px solid $black;
             }
