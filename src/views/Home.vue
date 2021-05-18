@@ -3,9 +3,9 @@
         
         <HomepageHeader msg="giving back to mama earth by buying less but better" />
 
-        <div class="homepage-main wrapper">
+        <div class="homepage-main">
             
-            <section class="homepage-intro">
+            <section class="homepage-intro wrapper">
                 <p>A collective of <em class="highlight highlight-r">sustainable retailers</em> focused on giving back to the planet.
                     <span class="emphasis">thank u,</span>
                     mama
@@ -17,7 +17,7 @@
                 </p>
             </section>
 
-            <section class="homepage-company">
+            <section class="homepage-company wrapper">
                 <div class="header">
                     <font-awesome-icon class="red" :icon="['fas', 'rainbow']" />
                     <h2>Meet Some of Our Faves</h2>
@@ -66,12 +66,12 @@
             </section>
 
             <section class="homepage-help">
-                <div class="header">
+                <div class="header wrapper">
                     <font-awesome-icon class="green" :icon="['fas', 'recycle']" />
                     <h2>Other Ways to Help</h2>
                 </div>
 
-                <div class="help-flex">
+                <div class="help-flex wrapper">
 
                     <div class="home-blog">
                         <!-- TODO fill in info -->
@@ -91,7 +91,7 @@
                 </div>
             </section>
 
-            <section class="join-club">
+            <section class="join-club wrapper">
                 <div class="join-club-text">
                     <h2>Wanna Join the Club?</h2>
                     <p>Submit your business to be featured on 
@@ -109,7 +109,7 @@
                 </div>
             </section>
 
-            <section class="homepage-share">
+            <section class="homepage-share wrapper">
                 <div class="header">
                     <font-awesome-icon class="blue" :icon="['fas', 'seedling']" />
                     <h2>Spread The Word</h2>
@@ -172,6 +172,7 @@
         padding: 30px;
         width: 90%;
         margin: 40px auto 0;
+        
     }
 
     .header {
@@ -200,6 +201,11 @@
             margin-top: 10px;
         }
     }
+
+    // .homepage-help {
+    //     background-image: url('~@/assets/topography.svg');
+        
+    // }
 
     .help-flex {
         display: flex;

@@ -13,14 +13,37 @@
         <section class="categories wrapper">
             <!-- TODO add in images here -->
             <ul>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
-                <li><img src="https://via.placeholder.com/100" alt=""></li>
+                <li>
+                    <router-link class="overlay" to="/shop">clothing</router-link>
+                    <img src="~@/assets/clothes-cat-icon.png" alt="">
+                </li>
+                <li>
+                    <router-link to="/shop">
+                        <img src="~@/assets/food-cat-icon.png" alt="">
+                    </router-link>
+                </li>
+                <li>
+                    <router-link to="/shop">
+                        <img src="~@/assets/beauty-cat-icon.png" alt="">
+                    </router-link>
+                </li>
+                <li>
+                    <router-link to="/shop">
+                        <img src="~@/assets/home-cat-icon.png" alt="">
+                    </router-link>
+                </li>
+                <li>
+                    <router-link to="/shop">
+                        <img src="~@/assets/shoes-cat-icon.png" alt="">
+                    </router-link>
+                </li>
+                <li>
+                    <router-link to="/shop">
+                        <img src="~@/assets/byoc-cat-icon.png" alt="">
+                    </router-link>
+                </li>
+                <li><router-link to="/shop"><img src="~@/assets/clothes-cat-icon.png" alt=""></router-link></li>
+                <li><router-link to="/shop"><img src="~@/assets/clothes-cat-icon.png" alt=""></router-link></li>
             </ul>
 
         </section>
@@ -63,6 +86,7 @@
     }
 
     .categories {
+        border-bottom: .5px solid $black;
         padding: 20px 0;
     
         ul {
@@ -72,13 +96,42 @@
 
             li {
                 margin: 0 10px;
+                position: relative;
             }
 
 
             li img {
+                background-color: #fffcf7;
+                width: 80%;
                 border-radius: 50%;
-                border: .5px solid $black;
             }
+        }
+    }
+
+    .overlay {
+        background-color: $white;
+        opacity: 0;
+
+        text-align: center;
+
+        // border-radius: 50%;
+        width: 80%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        transition: .5s all;
+
+        &:hover,
+        &:focus {
+            opacity: .85;
         }
     }
 </style>
