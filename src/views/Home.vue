@@ -27,38 +27,53 @@
                     <li class="company-post">
                         <!-- TODO fill in info -->
                         <div class="company-post-img">
-                            <img src="https://via.placeholder.com/300x200/" alt="">
+                            <img src="~@/assets/cadence.jpg" alt="">
                         </div>
                         <div class="company-post-text">
-                            <h3>company #1</h3>
-                            <p>Ducimus eaque nihil qui vero neque, quis sint nulla cumque cum quisquam libero itaque.</p>
-                            <a class="square-btn click-o" href="#">shop</a>
+                            <h3>Cadence</h3>
+                            <ul class="company-flex">
+                                <li><img src="~@/assets/recycled-mat-pillar-icon.png" alt=""></li>
+                                <li><img src="~@/assets/recycled-mat-pillar-icon.png" alt=""></li>
+                                <li><img src="~@/assets/recycled-mat-pillar-icon.png" alt=""></li>
+                            </ul>
+                            <p>the next generation of refillable travel containers for your personal care and toiletries. patent-pending, leakproof, and highly durable capsules made from recycled plastic. even better, they are magnetic so they stick together creating a cute lil honeycomb.</p>
+                            <a class="square-btn click-o" target="_blank" rel="noopener" href="https://keepyourcadence.com/">shop</a>
                         </div>
                     </li>
 
                     <li class="company-post">
                         <!-- TODO fill in info -->
                         <div class="company-post-img">
-                            <img src="https://via.placeholder.com/300x200/" alt="">
+                            <img src="~@/assets/arq.jpg" alt="">
                         </div>
 
                         <div class="company-post-text">
-                            <h3>company #2</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <a class="square-btn click-y" href="#">shop</a>
+                            <h3>arq</h3>
+                            <ul class="company-flex">
+                                <li><img src="https://via.placeholder.com/50/" alt=""></li>
+                                <li><img src="~@/assets/plastic-free-pillar-icon.png" alt=""></li>
+                                <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
+                            </ul>
+                            <p>Known as the brand of simple undies and bra tops made for every body. in fact, they are so simple that arq only carries a few styles and launches limited colorways every so often. Their products are made in the USA in a family-owned factory using GOTS certified fabrics that always come in the coolest colors and prints. </p>
+                            <a class="square-btn click-y" target="_blank" rel="noopener" href="https://shoparq.com/">shop</a>
                         </div>
                     </li>
 
                     <li class="company-post">
                         <!-- TODO fill in info -->
                         <div class="company-post-img">
-                            <img src="https://via.placeholder.com/300x200/" alt="">
+                            <img src="~@/assets/green-boheme.jpg" alt="">
                         </div>
 
                         <div class="company-post-text">
-                            <h3>company #3</h3>
-                            <p>Eaque nihil qui vero neque, quis sint nulla cumque cum quisquam libero itaque, laudantium quaerat magni delectus accusantium, dolor non culpa?</p>
-                            <a class="square-btn click-r" href="#">shop</a>
+                            <h3>Green Bohème</h3>
+                            <ul class="company-flex">
+                                <li><img src="~@/assets/plastic-free-pillar-icon.png" alt=""></li>
+                                <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
+                                <li><img src="https://via.placeholder.com/50/" alt=""></li>
+                            </ul>
+                            <p>Green bohème honours the practice of slow living with wares that have been thoughtfully created by artisans from around the world. They hope to inspire with collections that celebrate sustainability and quality in the art of homemaking.</p>
+                            <a class="square-btn click-r" target="_blank" rel="noopener" href="https://greenboheme.ca/">shop</a>
                         </div>
                     </li>
                     
@@ -119,12 +134,14 @@
                     <div class="share-stories">
                         <h3 class="emphasis">Five Ways to Shop With The Earth in Mind:</h3>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, officia.</li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam modi debitis perferendis!</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, dolores?</li>
+                            <li><p>When u can, <em class="highlight highlight-r">shop local and support small businesses</em>. This stimulates your local economy & ensures a small carbon footprint. ps. don't forget those <em class="highlight highlight-g">reusable totes!</em></p></li>
+                            <li><p>Think <em class="highlight highlight-b">quality not quantity</em> and invest in timeless pieces made of organic or recycled fibers.</p></li>
+                            <li><p><em class="highlight highlight-y">Know your personal style</em> and avoid purchasing trendy items that will go out of style quickly and likely end up in a landfill.</p></li>
+                            <li><p><em class="highlight highlight-g">Shop pre-loved & vintage pieces</em> as it extends the life of a product and saves it from ending up in the garbage.</p></li>
+                            <li><p>Don't shop at all. Instead, check out <em class="highlight highlight-o">trading groups</em> or the <em class="highlight highlight-b">freebie section</em> of reseller sites, this will not only save mama earth but also money! </p></li>
                         </ul>
+
+                        <p class="emphasis note">*info above is available as instagram story slides for u to download & share to help spread the word.</p>
 
                         <button class="square-btn click-r" download>download + share</button>
                     </div>
@@ -133,8 +150,8 @@
                         <h3 class="emphasis">Digital Downloads: Phone Wallpapers</h3>
 
                         <div class="wallpaper-flex">
-                            <img src="~@/assets/lil-bits-mama-earth-mockup.png" alt="">
-                            <img src="~@/assets/everyday-like-earth-day-mockup.png" alt="">
+                            <img src="~@/assets/lil-bits-mama-earth-mockup.png" alt="An iPhone with the lil bits of mama earth digital wallpaper.">
+                            <img src="~@/assets/everyday-like-earth-day-mockup.png" alt="An iPhone with the treat every day like earth day digital wallpaper.">
                         </div>
 
                         <router-link class="click-y square-btn" to="/fun">download + see more</router-link>
@@ -202,10 +219,20 @@
         }
     }
 
-    // .homepage-help {
-    //     background-image: url('~@/assets/topography.svg');
-        
-    // }
+    .company-flex {
+        display: flex;
+        justify-content: flex-start;
+
+        li {
+            margin-right: 20px;
+            width: 15%;
+
+            img {
+                border-radius: 50%;
+                
+            }
+        }
+    }
 
     .help-flex {
         display: flex;
@@ -254,6 +281,12 @@
     .share-flex { 
         justify-content: center;
         align-items: flex-start;
+    }
+
+    .note {
+        font-size: 1.4rem;
+
+        padding-top: 10px;
     }
 
     .share-wallpapers,

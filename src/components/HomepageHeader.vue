@@ -5,45 +5,45 @@
             
             <div class="home-header-text wrapper">
                 <h1>{{ msg }}</h1>
-                <router-link class="square-btn click-r" to="/shop">shop</router-link>
+                <router-link class="square-btn click-r spread" to="/shop">shop</router-link>
             </div>
 
         </section>
 
         <section class="categories wrapper">
-            <!-- TODO add in images here -->
             <ul>
                 <li>
-                    <router-link class="overlay" to="/shop">clothing</router-link>
-                    <img src="~@/assets/clothes-cat-icon.png" alt="">
+                    <router-link class="overlay" to="/shop">Clothing</router-link>
+                    <img src="~@/assets/clothes-cat-icon.png" alt="Hand-drawn hanger.">
                 </li>
                 <li>
-                    <router-link to="/shop">
-                        <img src="~@/assets/food-cat-icon.png" alt="">
-                    </router-link>
+                    <router-link class="overlay" to="/shop">Home</router-link>
+                    <img src="~@/assets/home-cat-icon.png" alt="Hand-drawn house.">
                 </li>
                 <li>
-                    <router-link to="/shop">
-                        <img src="~@/assets/beauty-cat-icon.png" alt="">
-                    </router-link>
+                    <router-link class="overlay" to="/shop">Accessories</router-link>
+                    <img src="~@/assets/accessories-cat-icon.png" alt="Hand-drawn bucket hat.">
                 </li>
                 <li>
-                    <router-link to="/shop">
-                        <img src="~@/assets/home-cat-icon.png" alt="">
-                    </router-link>
+                    <router-link class="overlay" to="/shop">Beauty</router-link>
+                    <img src="~@/assets/beauty-cat-icon.png" alt="Hand-drawn serum bottle.">
                 </li>
                 <li>
-                    <router-link to="/shop">
-                        <img src="~@/assets/shoes-cat-icon.png" alt="">
-                    </router-link>
+                    <router-link class="overlay" to="/shop">Food</router-link>
+                    <img src="~@/assets/food-cat-icon.png" alt="Hand-drawn  mushrooms.">
                 </li>
                 <li>
-                    <router-link to="/shop">
-                        <img src="~@/assets/byoc-cat-icon.png" alt="">
-                    </router-link>
+                    <router-link class="overlay" to="/shop">Shoes</router-link>
+                    <img src="~@/assets/shoes-cat-icon.png" alt="Hand-drawn sneaker.">
                 </li>
-                <li><router-link to="/shop"><img src="~@/assets/clothes-cat-icon.png" alt=""></router-link></li>
-                <li><router-link to="/shop"><img src="~@/assets/clothes-cat-icon.png" alt=""></router-link></li>
+                <li>
+                    <router-link class="overlay" to="/shop">Baby</router-link>
+                    <img src="~@/assets/baby-cat-icon.png" alt="Hand-drawn baby onesie.">
+                </li>
+                <li>
+                    <router-link class="overlay" to="/shop">BYOC</router-link>
+                    <img src="~@/assets/byoc-cat-icon.png" alt="Hand-drawn mason jar.">
+                </li>
             </ul>
 
         </section>
@@ -99,7 +99,6 @@
                 position: relative;
             }
 
-
             li img {
                 background-color: #fffcf7;
                 width: 80%;
@@ -113,8 +112,8 @@
         opacity: 0;
 
         text-align: center;
+        font-size: 1.3rem;
 
-        // border-radius: 50%;
         width: 80%;
 
         display: flex;
