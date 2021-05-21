@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         
-        <HomepageHeader msg="giving back to mama earth by buying less but better" />
+        <HomepageHeader msg="Giving back to mama earth by buying less, but better." />
 
         <div class="homepage-main">
             
@@ -24,60 +24,52 @@
                 </div>
 
                 <ul class="homepage-company-posts">
-                    <li class="company-post">
-                        <!-- TODO fill in info -->
-                        <div class="company-post-img">
-                            <img src="~@/assets/cadence.jpg" alt="">
-                        </div>
-                        <div class="company-post-text">
-                            <h3>Cadence</h3>
-                            
-                            <h4 class="info-bubble">transparent</h4>
-                            
-                            <ul class="company-flex">
-                                <li><img src="~@/assets/reuse-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/recycled-mat-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
-                            </ul>
-                            <p>the next generation of refillable travel containers for your personal care and toiletries. patent-pending, leakproof, and highly durable capsules made from recycled plastic. even better, they are magnetic so they stick together creating a cute lil honeycomb.</p>
-                            <a class="square-btn click-o" target="_blank" rel="noopener" href="https://keepyourcadence.com/">shop</a>
-                        </div>
+                    <li>
+                        <CompanyPost 
+                            imgSrcOne="cadence.jpg"
+                            imgAltOne="Recycled plastic refillable travel containers."
+                            name="Cadence"
+                            pillarSrcOne="reuse-pillar-icon.png"
+                            pillarAltOne="Reuseable"
+                            pillarSrcTwo="recycled-mat-pillar-icon.png"
+                            pillarAltTwo="Recycled Materials"
+                            pillarSrcThree="recycled-pack-pillar-icon.png"
+                            pillarAltThree="Recycled Packaging"
+                            info="the next generation of refillable travel containers for your personal care and toiletries. patent-pending, leakproof, and highly durable capsules made from recycled plastic. even better, they are magnetic so they stick together creating a cute lil honeycomb."
+                            link="https://keepyourcadence.com/"
+                        />
+                    </li> 
+
+                    <li>
+                        <CompanyPost 
+                            imgSrcOne="arq.jpg"
+                            imgAltOne="Bra and Undies hanging off of a chair."
+                            name="arq"
+                            pillarSrcOne="organic-pillar-icon.png"
+                            pillarAltOne="Organic"
+                            pillarSrcTwo="plastic-free-pillar-icon.png"
+                            pillarAltTwo="Plastic Free"
+                            pillarSrcThree="recycled-pack-pillar-icon.png"
+                            pillarAltThree="Recycled Packaging"
+                            info="Known as the brand of simple undies and bra tops made for every body. in fact, they are so simple that arq only carries a few styles and launches limited colorways every so often. Their products are made in the USA in a family-owned factory using GOTS certified fabrics that always come in the coolest colors and prints."
+                            link="https://shoparq.com/"
+                        />
                     </li>
 
-                    <li class="company-post">
-                        <!-- TODO fill in info -->
-                        <div class="company-post-img">
-                            <img src="~@/assets/arq.jpg" alt="">
-                        </div>
-
-                        <div class="company-post-text">
-                            <h3>arq</h3>
-                            <ul class="company-flex">
-                                <li><img src="~@/assets/organic-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/plastic-free-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
-                            </ul>
-                            <p>Known as the brand of simple undies and bra tops made for every body. in fact, they are so simple that arq only carries a few styles and launches limited colorways every so often. Their products are made in the USA in a family-owned factory using GOTS certified fabrics that always come in the coolest colors and prints. </p>
-                            <a class="square-btn click-y" target="_blank" rel="noopener" href="https://shoparq.com/">shop</a>
-                        </div>
-                    </li>
-
-                    <li class="company-post">
-                        <!-- TODO fill in info -->
-                        <div class="company-post-img">
-                            <img src="~@/assets/green-boheme.jpg" alt="">
-                        </div>
-
-                        <div class="company-post-text">
-                            <h3>Green Bohème</h3>
-                            <ul class="company-flex">
-                                <li><img src="~@/assets/plastic-free-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/zero-waste-pillar-icon.png" alt=""></li>
-                            </ul>
-                            <p>Green bohème honours the practice of slow living with wares that have been thoughtfully created by artisans from around the world. They hope to inspire with collections that celebrate sustainability and quality in the art of homemaking.</p>
-                            <a class="square-btn click-r" target="_blank" rel="noopener" href="https://greenboheme.ca/">shop</a>
-                        </div>
+                    <li>
+                        <CompanyPost 
+                            imgSrcOne="green-boheme.jpg"
+                            imgAltOne="Zero waste cleaning supples hung on a wall rack."
+                            name="Green Bohème"
+                            pillarSrcOne="zero-waste-pillar-icon.png"
+                            pillarAltOne="Zero Waste"
+                            pillarSrcTwo="plastic-free-pillar-icon.png"
+                            pillarAltTwo="Plastic Free"
+                            pillarSrcThree="recycled-pack-pillar-icon.png"
+                            pillarAltThree="Recycled Packaging"
+                            info="Green bohème honours the practice of slow living with wares that have been thoughtfully created by artisans from around the world. They hope to inspire with collections that celebrate sustainability and quality in the art of homemaking."
+                            link="https://greenboheme.ca/"
+                        />
                     </li>
                     
                 </ul>
@@ -170,19 +162,32 @@
 
 <script>
     import HomepageHeader from "@/components/HomepageHeader.vue";
+    import CompanyPost from "@/components/CompanyPost.vue";
+
 
     export default {
         name: "Home",
         components: {
             HomepageHeader,
+            CompanyPost,
         },
-    };
+    
+    }
+    // create event listener that waits for hover of button
+    // on hover, display value of the specific icon 
+
+
 </script>
 
 <style scoped lang="scss">
 
     @import '@/styles/config.scss';
     @import '@/styles/general.scss';
+
+    .pillar {
+        position: relative;
+        
+    }
 
     .info-bubble {
         background-image: url('~@/assets/info-bubble.png');
@@ -198,6 +203,13 @@
         display: inline-block;
 
         position: absolute;
+        top: -60px;
+
+        // opacity: 0;
+
+        // &:hover {
+        //     opacity: 1;
+        // }
     }
 
     .homepage-intro {
@@ -220,37 +232,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-    }
-
-    .company-post {
-        margin: 0 15px;
-    }
-
-    .company-post-text {
-        padding: 25px 0;
-
-        h3 {
-            padding-bottom: 15px;
-        }
-
-        a {
-            margin-top: 10px;
-        }
-    }
-
-    .company-flex {
-        display: flex;
-        justify-content: flex-start;
-
-        li {
-            margin-right: 20px;
-            width: 15%;
-
-            img {
-                border-radius: 50%;
-                
-            }
-        }
     }
 
     .help-flex {

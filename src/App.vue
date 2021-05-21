@@ -3,13 +3,13 @@
         <AlertBar />
         
         <div id="nav" class="wrapper">
-        <router-link class="click-r" to="/shop">shop</router-link> 
-        <router-link class="click-o" to="/info">why sustainable?</router-link> 
+        <!-- <router-link class="click-r" to="/shop">shop</router-link>  -->
+        <!-- <router-link class="click-o" to="/info">why sustainable?</router-link>  -->
         <!-- TODO update logo so colors are in proper order -->
         <router-link to="/"><img class="logo" src="./assets/logo.png" alt="thank u, mama earth logo"></router-link>  
-        <router-link class="click-y" to="/fun">fun stuff</router-link>
-        <router-link class="click-g" to="/about">about</router-link>
-        <router-link class="click-b" to="/contact">join the club</router-link>
+        <!-- <router-link class="click-y" to="/fun">fun stuff</router-link> -->
+        <!-- <router-link class="click-g" to="/about">about</router-link> -->
+        <!-- <router-link class="click-b" to="/contact">join the club</router-link> -->
         </div>
 
         <router-view />
@@ -74,7 +74,7 @@
     import AlertBar from "@/components/AlertBar.vue";
 
     export default {
-        name: "Alert",
+        name: "App",
         components: {
             AlertBar,
         },
