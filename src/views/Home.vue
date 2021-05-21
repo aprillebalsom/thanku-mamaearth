@@ -31,10 +31,13 @@
                         </div>
                         <div class="company-post-text">
                             <h3>Cadence</h3>
+                            
+                            <h4 class="info-bubble">transparent</h4>
+                            
                             <ul class="company-flex">
+                                <li><img src="~@/assets/reuse-pillar-icon.png" alt=""></li>
                                 <li><img src="~@/assets/recycled-mat-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/recycled-mat-pillar-icon.png" alt=""></li>
-                                <li><img src="~@/assets/recycled-mat-pillar-icon.png" alt=""></li>
+                                <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
                             </ul>
                             <p>the next generation of refillable travel containers for your personal care and toiletries. patent-pending, leakproof, and highly durable capsules made from recycled plastic. even better, they are magnetic so they stick together creating a cute lil honeycomb.</p>
                             <a class="square-btn click-o" target="_blank" rel="noopener" href="https://keepyourcadence.com/">shop</a>
@@ -50,7 +53,7 @@
                         <div class="company-post-text">
                             <h3>arq</h3>
                             <ul class="company-flex">
-                                <li><img src="https://via.placeholder.com/50/" alt=""></li>
+                                <li><img src="~@/assets/organic-pillar-icon.png" alt=""></li>
                                 <li><img src="~@/assets/plastic-free-pillar-icon.png" alt=""></li>
                                 <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
                             </ul>
@@ -70,7 +73,7 @@
                             <ul class="company-flex">
                                 <li><img src="~@/assets/plastic-free-pillar-icon.png" alt=""></li>
                                 <li><img src="~@/assets/recycled-pack-pillar-icon.png" alt=""></li>
-                                <li><img src="https://via.placeholder.com/50/" alt=""></li>
+                                <li><img src="~@/assets/zero-waste-pillar-icon.png" alt=""></li>
                             </ul>
                             <p>Green bohème honours the practice of slow living with wares that have been thoughtfully created by artisans from around the world. They hope to inspire with collections that celebrate sustainability and quality in the art of homemaking.</p>
                             <a class="square-btn click-r" target="_blank" rel="noopener" href="https://greenboheme.ca/">shop</a>
@@ -180,6 +183,22 @@
 
     @import '@/styles/config.scss';
     @import '@/styles/general.scss';
+
+    .info-bubble {
+        background-image: url('~@/assets/info-bubble.png');
+        background-repeat: no-repeat;
+
+        font-size: 1.4rem;
+        text-align: center;
+
+        background-size: 100% 70%;
+        background-position: 50%;
+        padding: 20px 20px 25px;
+
+        display: inline-block;
+
+        position: absolute;
+    }
 
     .homepage-intro {
         background-image: url('~@/assets/topography.svg');
