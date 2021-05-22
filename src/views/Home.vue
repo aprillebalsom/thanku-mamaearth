@@ -140,9 +140,9 @@
                             <li><p>Don't shop at all. Instead, check out <em class="highlight highlight-o">trading groups</em> or the <em class="highlight highlight-b">freebie section</em> of reseller sites, this will not only save mama earth but also money! </p></li>
                         </ul>
 
-                        <p class="emphasis note">*info above is available as instagram story slides for u to download & share to help spread the word.</p>
+                        <p class="emphasis note">*info above is available as instagram story slide for u to download & share to help spread the word.</p>
 
-                        <button class="square-btn click-r" download>download + share</button>
+                        <a class="square-btn click-r" download href="~@/assets/5-ways-to-shop.png3">download + share</a>
                     </div>
 
                     <div class="share-wallpapers">
@@ -152,8 +152,8 @@
                             <img src="~@/assets/keep-growing-mockup.png" alt="An iPhone with the lil bits of mama earth digital wallpaper.">
                             <img src="~@/assets/everyday-like-earth-day-mockup.png" alt="An iPhone with the treat every day like earth day digital wallpaper.">
                         </div>
-
-                        <router-link class="click-y square-btn" to="/fun">download + see more</router-link>
+                        <a class="click-y square-btn" target="_blank" rel="noopener" href="https://www.etsy.com/ca/shop/sundayhomework">download + see more</a>
+                        <!-- <router-link class="click-y square-btn" to="/fun">download + see more</router-link> -->
                     </div>
 
                 </div>
