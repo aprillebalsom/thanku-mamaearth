@@ -5,7 +5,8 @@
             
             <div class="home-header-text wrapper">
                 <h1>{{ msg }}</h1>
-                <router-link class="square-btn click-r spread" to="/shop">shop</router-link>
+                <!-- <router-link class="square-btn click-r spread" to="/shop">shop</router-link> -->
+                <a class="square-btn click-r spread" href="https://thankumamaearth.pory.app/">shop</a>
             </div>
 
         </section>
@@ -13,35 +14,43 @@
         <section class="categories wrapper">
             <ul>
                 <li>
-                    <router-link class="overlay" to="/shop">Clothing</router-link>
+                    <!-- <router-link class="overlay" to="/shop">Clothing</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/clothes-cat-icon.png" alt="Hand-drawn hanger.">
                 </li>
                 <li>
-                    <router-link class="overlay" to="/shop">Home</router-link>
+                    <!-- <router-link class="overlay" to="/shop">Home</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/home-cat-icon.png" alt="Hand-drawn house.">
                 </li>
                 <li>
-                    <router-link class="overlay" to="/shop">Accessories</router-link>
+                    <!-- <router-link class="overlay" to="/shop">Accessories</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/accessories-cat-icon.png" alt="Hand-drawn bucket hat.">
                 </li>
                 <li>
-                    <router-link class="overlay" to="/shop">Beauty</router-link>
+                    <!-- <router-link class="overlay" to="/shop">Beauty</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/beauty-cat-icon.png" alt="Hand-drawn serum bottle.">
                 </li>
                 <li>
-                    <router-link class="overlay" to="/shop">Food</router-link>
+                    <!-- <router-link class="overlay" to="/shop">Food</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/food-cat-icon.png" alt="Hand-drawn  mushrooms.">
                 </li>
                 <li>
-                    <router-link class="overlay" to="/shop">Shoes</router-link>
+                    <!-- <router-link class="overlay" to="/shop">Shoes</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/shoes-cat-icon.png" alt="Hand-drawn sneaker.">
                 </li>
                 <li>
-                    <router-link class="overlay" to="/shop">Baby</router-link>
+                    <!-- <router-link class="overlay" to="/shop">Baby</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/baby-cat-icon.png" alt="Hand-drawn baby onesie.">
                 </li>
                 <li>
-                    <router-link class="overlay" to="/shop">BYOC</router-link>
+                    <!-- <router-link class="overlay" to="/shop">BYOC</router-link> -->
+                    <a class="overlay" href="https://thankumamaearth.pory.app/">shop</a>
                     <img src="~@/assets/byoc-cat-icon.png" alt="Hand-drawn mason jar.">
                 </li>
             </ul>

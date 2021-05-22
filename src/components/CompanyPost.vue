@@ -42,6 +42,7 @@
             link: String,
         },
     };
+    
 </script>
 
 
@@ -73,6 +74,34 @@
             margin-right: 20px;
             width: 15%;
         }
+    }
+
+    .pillar {
+        position: relative;
+        
+    }
+
+    .info-bubble {
+        background-image: url('~@/assets/info-bubble.png');
+        background-repeat: no-repeat;
+
+        font-size: 1.4rem;
+        text-align: center;
+
+        background-size: 100% 70%;
+        background-position: 50%;
+        padding: 20px 20px 25px;
+
+        display: inline-block;
+
+        position: absolute;
+        top: -60px;
+
+        // opacity: 0;
+
+        // &:hover {
+        //     opacity: 1;
+        // }
     }
 
 </style>

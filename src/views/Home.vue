@@ -84,9 +84,12 @@
                 <div class="help-flex wrapper">
 
                     <div class="home-blog">
-                        <!-- TODO fill in info -->
+                        <!-- TODO add in -->
+                        <!-- <HomepageBlog />
+                        <HomepageBlog /> -->
+                        
                         <div class="blog-post">
-                            <img src="https://via.placeholder.com/300x200/" alt="">
+                            <img src="" alt="">
                             <h3>Blog Post #1</h3>
                         </div>
                         <div class="blog-post">
@@ -96,7 +99,7 @@
                     </div>
 
                     <div class="home-info">
-                        <img src="https://via.placeholder.com/200x320/" alt="">
+                        <img src="~@/assets/this-for-that.png" alt="Small swaps to make that will help save mama earth.">
                     </div>
                 </div>
             </section>
@@ -115,7 +118,8 @@
                     </p>
                 </div>
                 <div class="join-club-btn">
-                    <router-link  class="square-btn click-b spread" to="/contact">join the club</router-link>
+                    <!-- <router-link  class="square-btn click-b spread" to="/contact">join the club</router-link> -->
+                    <a class="square-btn click-b spread" target="_blank" rel="noopener" href="https://forms.gle/HB84nvJu5SVYWfLs8">join the club</a>
                 </div>
             </section>
 
@@ -145,7 +149,7 @@
                         <h3 class="emphasis">Digital Downloads: Phone Wallpapers</h3>
 
                         <div class="wallpaper-flex">
-                            <img src="~@/assets/lil-bits-mama-earth-mockup.png" alt="An iPhone with the lil bits of mama earth digital wallpaper.">
+                            <img src="~@/assets/keep-growing-mockup.png" alt="An iPhone with the lil bits of mama earth digital wallpaper.">
                             <img src="~@/assets/everyday-like-earth-day-mockup.png" alt="An iPhone with the treat every day like earth day digital wallpaper.">
                         </div>
 
@@ -163,6 +167,8 @@
 <script>
     import HomepageHeader from "@/components/HomepageHeader.vue";
     import CompanyPost from "@/components/CompanyPost.vue";
+    import HomepageBlog from "@/components/HomepageBlog.vue";
+
 
 
     export default {
@@ -170,6 +176,7 @@
         components: {
             HomepageHeader,
             CompanyPost,
+            HomepageBlog,
         },
     
     }
@@ -184,43 +191,15 @@
     @import '@/styles/config.scss';
     @import '@/styles/general.scss';
 
-    .pillar {
-        position: relative;
-        
-    }
-
-    .info-bubble {
-        background-image: url('~@/assets/info-bubble.png');
-        background-repeat: no-repeat;
-
-        font-size: 1.4rem;
-        text-align: center;
-
-        background-size: 100% 70%;
-        background-position: 50%;
-        padding: 20px 20px 25px;
-
-        display: inline-block;
-
-        position: absolute;
-        top: -60px;
-
-        // opacity: 0;
-
-        // &:hover {
-        //     opacity: 1;
-        // }
-    }
-
     .homepage-intro {
-        background-image: url('~@/assets/topography.svg');
+        // background-image: url('~@/assets/topography.svg');
+        background-color: #d6d8dc5d;
 
         font-size: clamp(2rem, 2.2vw, 2.4rem);
 
         padding: 30px;
-        width: 90%;
+        width: 85%;
         margin: 40px auto 0;
-        
     }
 
     .header {

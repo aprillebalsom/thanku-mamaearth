@@ -16,7 +16,7 @@
 
         <footer>
             <section class="main-footer wrapper">
-                <div class="footer-nav">
+                <!-- <div class="footer-nav">
                     <ul> 
                         <li>
                             <router-link class="click-r" to="/shop">shop</router-link> 
@@ -37,22 +37,22 @@
                             <router-link class="click-b" to="/contact">join the club</router-link>  
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="footer-socials">
                     <h4>Stay In Touch</h4>
                     <ul>
-                        <li><a target="_blank" rel="noopener" href="https://www.instagram.com/thankumamaearth/">
+                        <li><a target="_blank" rel="noopener" title="instagram" href="https://www.instagram.com/thankumamaearth/">
                             <font-awesome-icon class="click-y" :icon="['fab', 'instagram']" />
                         </a></li>
 
-                        <li><a target="_blank" rel="noopener" href="https://www.facebook.com/thankumamaearth">
+                        <li><a target="_blank" rel="noopener" title="facebook" href="https://www.facebook.com/thankumamaearth">
                             <font-awesome-icon class="click-b" :icon="['fab', 'facebook-f']" />
                         </a></li>
-                        <li><a target="_blank" rel="noopener" href="https://www.pinterest.ca/thankumamaearth/_created/">
+                        <li><a target="_blank" rel="noopener" title="pinterest" href="https://www.pinterest.ca/thankumamaearth/_created/">
                             <font-awesome-icon class="click-r" :icon="['fab', 'pinterest']" />
                         </a></li>
-                        <li><a target="_blank" rel="noopener" href="https://www.etsy.com/ca/shop/sundayhomework">
+                        <li><a target="_blank" rel="noopener" title="etsy" href="https://www.etsy.com/ca/shop/sundayhomework">
                             <font-awesome-icon class="click-o" :icon="['fab', 'etsy']" />
                         </a></li>
                     </ul>
@@ -97,10 +97,6 @@
 
         a {
             margin: 0 15px;
-        
-            &.router-link-exact-active {
-                color: $green;
-            }
         }
     }
 
@@ -122,12 +118,16 @@
         display: flex;
     }
 
-    .footer-nav ul{
+    .footer-nav ul {
         margin-right: 25px;
     }
 
-    .footer-socials li{
+    .footer-socials li {
         margin: 10px 15px 10px 0;
+
+        svg {
+            transition: .5s all;
+        }
     }
 
     .sub-footer {
