@@ -7,21 +7,38 @@
 
         <div class="company-post-text">
             <h3>{{ name }}</h3>
-
+    
             <ul class="company-flex">
-                <li> 
-                    <div><img src="" alt=""></div>
-                    <img :src="require('@/assets/' + pillarSrcOne + '')" :alt="`${pillarAltOne}`"/>
+                <li class="pillar"> 
+                    <div class="info-bubble" v-if="hovered1" >
+                        <p>{{ pillarAltOne }}</p>
+                    </div>
+
+                    <div class="pillar-icon" @mouseover="hovered1 = true" @mouseleave="hovered1 = false"> 
+                       <img :src="require('@/assets/' + pillarSrcOne + '')" :alt="`${pillarAltOne}`"/>
+                    </div>
                 </li> 
-                <li> 
-                    <img :src="require('@/assets/' + pillarSrcTwo + '')" :alt="`${pillarAltOne}`"/>
+                <li class="pillar"> 
+                    <div class="info-bubble" v-if="hovered2" >
+                        <p>{{ pillarAltTwo }}</p>
+                    </div>
+
+                    <div class="pillar-icon" @mouseover="hovered2 = true" @mouseleave="hovered2 = false"> 
+                        <img :src="require('@/assets/' + pillarSrcTwo + '')" :alt="`${pillarAltOne}`"/>
+                    </div>
                 </li> 
-                <li> 
-                    <img :src="require('@/assets/' + pillarSrcThree + '')" :alt="`${pillarAltOne}`"/>
+                <li class="pillar"> 
+                    <div class="info-bubble" v-if="hovered3" >
+                        <p>{{ pillarAltThree }}</p>
+                    </div>
+
+                    <div class="pillar-icon" @mouseover="hovered3 = true" @mouseleave="hovered3 = false"> 
+                        <img :src="require('@/assets/' + pillarSrcThree + '')" :alt="`${pillarAltOne}`"/>
+                    </div>
                 </li> 
             </ul> 
 
-            <p> {{ info }}</p>
+            <p>{{ info }}</p>
             <a class="square-btn click-y" target="_blank" rel="noopener" :href="`${link}`">shop</a>
         </div>
 
@@ -39,10 +56,19 @@
             pillarSrcOne: String,
             pillarAltOne: String,
             pillarSrcTwo: String,
+            pillarAltTwo: String,
             pillarSrcThree: String,
+            pillarAltThree: String,
             link: String,
         },
-    };
+        data() {
+            return {
+                hovered1: false,
+                hovered2: false,
+                hovered3: false,
+            } 
+        },
+     };
     
 </script>
 
@@ -75,34 +101,6 @@
             margin-right: 20px;
             width: 15%;
         }
-    }
-
-    .pillar {
-        position: relative;
-        
-    }
-
-    .info-bubble {
-        background-image: url('~@/assets/info-bubble.png');
-        background-repeat: no-repeat;
-
-        font-size: 1.4rem;
-        text-align: center;
-
-        background-size: 100% 70%;
-        background-position: 50%;
-        padding: 20px 20px 25px;
-
-        display: inline-block;
-
-        position: absolute;
-        top: -60px;
-
-        // opacity: 0;
-
-        // &:hover {
-        //     opacity: 1;
-        // }
     }
 
 </style>
