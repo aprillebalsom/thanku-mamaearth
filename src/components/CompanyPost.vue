@@ -10,6 +10,7 @@
 
             <ul class="company-flex">
                 <li> 
+                    <div><img src="" alt=""></div>
                     <img :src="require('@/assets/' + pillarSrcOne + '')" :alt="`${pillarAltOne}`"/>
                 </li> 
                 <li> 

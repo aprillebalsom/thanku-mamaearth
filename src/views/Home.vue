@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         
-        <HomepageHeader msg="Giving back to mama earth by buying less, but better." />
+        <HomepageHeader />
 
         <div class="homepage-main">
             
@@ -30,7 +30,7 @@
                             imgAltOne="Recycled plastic refillable travel containers."
                             name="Cadence"
                             pillarSrcOne="reuse-pillar-icon.png"
-                            pillarAltOne="Reuseable"
+                            pillarAltOne="Reusable"
                             pillarSrcTwo="recycled-mat-pillar-icon.png"
                             pillarAltTwo="Recycled Materials"
                             pillarSrcThree="recycled-pack-pillar-icon.png"
@@ -142,7 +142,7 @@
 
                         <p class="emphasis note">*info above is available as instagram story slide for u to download & share to help spread the word.</p>
 
-                        <a class="square-btn click-r" download href="~@/assets/5-ways-to-shop.png3">download + share</a>
+                        <a class="square-btn click-r" download href="~@/assets/5-ways-to-shop.png">download + share</a>
                     </div>
 
                     <div class="share-wallpapers">
@@ -193,13 +193,14 @@
 
     .homepage-intro {
         // background-image: url('~@/assets/topography.svg');
-        background-color: #d6d8dc5d;
+        // background-color: #d6d8dc5d;
 
-        font-size: clamp(2rem, 2.2vw, 2.4rem);
+        font-size: clamp(2.2rem, 2.4vw, 2.6rem);
 
-        padding: 30px;
-        width: 85%;
-        margin: 40px auto 0;
+        border-bottom: .5px solid $black;
+
+        padding: 100px 60px;
+        // margin: 40px auto 0;
     }
 
     .header {
