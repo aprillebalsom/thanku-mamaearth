@@ -63,14 +63,13 @@
             pillarAltThree: String,
             link: String,
         },
-        data() {
-            return {
-                hovered1: false,
-                hovered2: false,
-                hovered3: false,
-            } 
-        },
-     };
+        data: {
+            hovered1: false,
+            hovered2: false,
+            hovered3: false,
+        } 
+        
+    };
     
 </script>
 
