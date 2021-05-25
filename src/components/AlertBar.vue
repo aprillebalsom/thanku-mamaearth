@@ -24,4 +24,10 @@
 
         padding: 10px;
     }
+
+    @media (max-width: 768px) {
+        .alert-bar {
+            padding: 10px 30px;
+        }
+    }
 </style>

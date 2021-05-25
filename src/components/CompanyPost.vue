@@ -10,9 +10,11 @@
     
             <ul class="company-flex">
                 <li class="pillar"> 
-                    <div class="info-bubble" v-if="hovered1" >
-                        <p>{{ pillarAltOne }}</p>
-                    </div>
+                    <transition name="slide-fade">
+                        <div class="info-bubble" v-if="hovered1" >
+                            <p>{{ pillarAltOne }}</p>
+                        </div>
+                    </transition>
 
                     <div class="pillar-icon" @mouseover="hovered1 = true" @mouseleave="hovered1 = false"> 
                        <img :src="require('@/assets/' + pillarSrcOne + '')" :alt="`${pillarAltOne}`"/>
@@ -100,7 +102,12 @@
         li {
             margin-right: 20px;
             width: 15%;
+            padding-bottom: 10px;
         }
     }
 
+    .slide-fade-enter-active {
+        transition: all .3s ease;
+    }
+    
 </style>

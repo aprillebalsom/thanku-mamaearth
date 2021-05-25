@@ -105,6 +105,7 @@
         align-items: center;
     }
 
+
     .square-btn {
         margin-top: 20px;
     }
@@ -128,6 +129,23 @@
                 width: 80%;
                 border-radius: 50%;
             }
+        }
+    }
+
+     @media (max-width: 768px) {
+        .home-header {
+            height: 58.5vh;
+        }
+
+        .categories ul { 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px 0;
+        }
+
+        .square-btn {
+            background-color: #fffefda6;
         }
     }
 

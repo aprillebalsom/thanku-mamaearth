@@ -180,9 +180,6 @@
         },
     
     }
-    // create event listener that waits for hover of button
-    // on hover, display value of the specific icon 
-
 
 </script>
 
@@ -192,15 +189,18 @@
     @import '@/styles/general.scss';
 
     .homepage-intro {
-        // background-image: url('~@/assets/topography.svg');
-        // background-color: #d6d8dc5d;
 
         font-size: clamp(2.2rem, 2.4vw, 2.6rem);
 
         border-bottom: .5px solid $black;
 
         padding: 100px 60px;
-        // margin: 40px auto 0;
+    }
+
+    @media(max-width: 768px) {
+        .homepage-intro {
+            padding: 50px 25px;
+        }
     }
 
     .header {
@@ -213,6 +213,19 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
+
+    @media (max-width: 768px) {
+        .homepage-company-posts {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 40px 0;
+        }
+
+        .homepage-company { 
+            padding-bottom: 0;
+        }
+    }
+
 
     .help-flex {
         display: flex;
@@ -236,6 +249,22 @@
         padding-bottom: 30px;
     }
 
+    @media (max-width: 768px) {
+        .help-flex {
+            flex-direction: column;
+        }
+
+        .home-blog, 
+        .home-info {
+            width: 100%;
+            margin: 0;
+        }
+
+        .blog-post {
+            padding-bottom: 50px;
+        }
+    }
+
     .join-club {
         border-top: .5px solid $black;
         border-bottom: .5px solid $black;
@@ -249,9 +278,23 @@
         }
     }
 
+    @media (max-width: 768px) { 
+
+        .join-club {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .square-btn {
+                margin-top: 25px;
+            }
+        }
+
+    }
+
     .homepage-share h3 {
         padding-bottom: 30px;
     }
+
 
     .share-flex,
     .wallpaper-flex {
@@ -293,6 +336,26 @@
 
     .share-wallpapers {
         border-left: .5px solid $black;
+    }
+
+    @media (max-width: 768px) {
+        .share-flex {
+            flex-direction: column;
+        }
+
+        .share-wallpapers,
+        .share-stories {
+            width: 100%;
+            padding: 0;
+        }
+
+        .share-wallpapers {
+            border-left: none;
+            border-top: .5px solid $black;
+
+            margin-top: 30px;
+            padding-top: 60px;
+        }
     }
 
     .wallpaper-flex {
