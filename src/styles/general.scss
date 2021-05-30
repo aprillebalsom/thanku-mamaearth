@@ -209,27 +209,27 @@ section {
 
 // info bubble
 .pillar {
-        position: relative;
-        
-    }
+    position: relative;
+    
+}
 
-    .pillar-icon {
-        cursor: pointer;
-    }
+.pillar-icon {
+    cursor: pointer;
+}
 
-    .info-bubble {
-        background-image: url('~@/assets/info-bubble.png');
-        background-repeat: no-repeat;
-        background-size: 100% 70%;
-        background-position: 50%;
-       
-        font-size: 1.4rem;
-        text-align: center;
+.info-bubble {
+    background-image: url('~@/assets/info-bubble.png');
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    background-position: 50%;
+    
+    font-size: 1.4rem;
+    text-align: center;
 
-        padding: 20px 15px 27px;
-        
-        display: inline-block;
+    padding: 20px 15px 27px;
+    
+    display: inline-block;
 
-        position: absolute;
-        top: -70px;
-    }
+    position: absolute;
+    top: -70px;
+}

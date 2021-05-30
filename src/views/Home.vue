@@ -13,7 +13,7 @@
                     <span class="orange">a</span>
                     <span class="yellow">r</span>
                     <span class="green">t</span>
-                    <span class="blue">h</span> was created to inspire environmental change through eco-conscious shopping & buying less, <span class="emphasis">but better</span>. Big or small, <em class="highlight highlight-y">every little bit counts</em> so thank u for doing your part. xx
+                    <span class="blue">h</span> was created to inspire environmental change through eco-conscious shopping & buying less, <span class="emphasis">but better</span>. Big or small, <em class="highlight highlight-y">every little bit counts</em> so thank u for doing your part.
                 </p>
             </section>
 
@@ -24,6 +24,23 @@
                 </div>
 
                 <ul class="homepage-company-posts">
+
+                        <li>
+                        <CompanyPost 
+                            imgSrcOne="arq.jpg"
+                            imgAltOne="Bra and Undies hanging off of a chair."
+                            name="arq"
+                            pillarSrcOne="organic-pillar-icon.png"
+                            pillarAltOne="Organic"
+                            pillarSrcTwo="plastic-free-pillar-icon.png"
+                            pillarAltTwo="Plastic Free"
+                            pillarSrcThree="recycled-pack-pillar-icon.png"
+                            pillarAltThree="Recycled Packaging"
+                            info="Known as the brand of simple undies and bra tops made for every body. in fact, they are so simple that arq only carries a few styles and launches limited colorways every so often. Their products are made in the USA in a family-owned factory using GOTS certified fabrics that always come in the coolest colors and prints."
+                            link="https://shoparq.com/"
+                        />
+                    </li>
+
                     <li>
                         <CompanyPost 
                             imgSrcOne="cadence.jpg"
@@ -39,22 +56,6 @@
                             link="https://keepyourcadence.com/"
                         />
                     </li> 
-
-                    <li>
-                        <CompanyPost 
-                            imgSrcOne="arq.jpg"
-                            imgAltOne="Bra and Undies hanging off of a chair."
-                            name="arq"
-                            pillarSrcOne="organic-pillar-icon.png"
-                            pillarAltOne="Organic"
-                            pillarSrcTwo="plastic-free-pillar-icon.png"
-                            pillarAltTwo="Plastic Free"
-                            pillarSrcThree="recycled-pack-pillar-icon.png"
-                            pillarAltThree="Recycled Packaging"
-                            info="Known as the brand of simple undies and bra tops made for every body. in fact, they are so simple that arq only carries a few styles and launches limited colorways every so often. Their products are made in the USA in a family-owned factory using GOTS certified fabrics that always come in the coolest colors and prints."
-                            link="https://shoparq.com/"
-                        />
-                    </li>
 
                     <li>
                         <CompanyPost 
