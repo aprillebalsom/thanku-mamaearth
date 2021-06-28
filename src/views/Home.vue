@@ -86,17 +86,21 @@
 
                     <div class="home-blog">
                         <!-- TODO add in -->
-                        <!-- <HomepageBlog />
+                        <!-- <HomepageBlog
+                        imgSrcOne="recycled-pack-pillar-icon.png"
+                        imgAltOne=" test test "
+                        name="test"
+                        />
                         <HomepageBlog /> -->
                         
-                        <div class="blog-post">
-                            <img src="" alt="">
-                            <h3>Blog Post #1</h3>
-                        </div>
-                        <div class="blog-post">
+                        <router-link to="/shop-earth-in-mind" class="blog-post">
+                            <img src="~@/assets/why-shop-earth-small.jpg" alt="A black sand beach in Iceland at sunset.">
+                            <h3>Why Shop With the Earth in Mind</h3>
+                        </router-link>
+                        <router-link to="/blog-post" class="blog-post">
                             <img src="https://via.placeholder.com/300x200/" alt="">
                             <h3>Blog Post #2</h3>
-                        </div>
+                        </router-link>
                     </div>
 
                     <div class="home-info">
@@ -361,6 +365,10 @@
 
     .wallpaper-flex {
         justify-content: space-between;
+    }
+
+    .wallpaper-flex img {
+        width: 50%;
     }
 
     .wallpaper-flex img:nth-of-type(1) {

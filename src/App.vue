@@ -101,12 +101,6 @@
     }
 
     .main-footer {
-        // background-image:  url('~@/assets/earth-footer.png');
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        // background-position: center;
-
-
         border-top: .5px solid $black;
         font-size: 1.4rem;
         line-height: 2.2rem;
